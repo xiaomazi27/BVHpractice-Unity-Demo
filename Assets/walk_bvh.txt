@@ -1,0 +1,62 @@
+HIERARCHY
+ROOT root
+{
+    OFFSET 0.0 0.0 0.0
+    CHANNELS 6 Xposition Yposition Zposition Zrotation Yrotation Xrotation
+    JOINT pelvis
+    {
+        OFFSET 0 0 0
+        CHANNELS 3 Zrotation Yrotation Xrotation
+        JOINT lfemur
+        {
+            OFFSET 0 10 0
+            CHANNELS 3 Zrotation Yrotation Xrotation
+            JOINT ltibia
+            {
+                OFFSET 0 0 -10
+                CHANNELS 3 Zrotation Yrotation Xrotation
+                End Site
+                {
+                    OFFSET 0 0 -5
+                }
+            }
+        }
+        JOINT rfemur
+        {
+            OFFSET 0 10 0
+            CHANNELS 3 Zrotation Yrotation Xrotation
+            JOINT rtibia
+            {
+                OFFSET 0 0 -10
+                CHANNELS 3 Zrotation Yrotation Xrotation
+                End Site
+                {
+                    OFFSET 0 0 -5
+                }
+            }
+        }
+    }
+}
+MOTION
+Frames: 20
+Frame Time: 0.033333
+0 0 0 0 0 0  0 0 0  0 0 0  0 0 0
+0 0 0 0 0 0  10 0 0  0 0 0  -10 0 0
+0 0 0 0 0 0  20 0 0  0 0 0  -20 0 0
+0 0 0 0 0 0  10 0 0  0 0 0  -10 0 0
+0 0 0 0 0 0  0 0 0  0 0 0  0 0 0
+0 0 0 0 0 0  -10 0 0  0 0 0  10 0 0
+0 0 0 0 0 0  -20 0 0  0 0 0  20 0 0
+0 0 0 0 0 0  -10 0 0  0 0 0  10 0 0
+0 0 0 0 0 0  0 0 0  0 0 0  0 0 0
+0 0 0 0 0 0  10 0 0  0 0 0  -10 0 0
+0 0 0 0 0 0  20 0 0  0 0 0  -20 0 0
+0 0 0 0 0 0  10 0 0  0 0 0  -10 0 0
+0 0 0 0 0 0  0 0 0  0 0 0  0 0 0
+0 0 0 0 0 0  -10 0 0  0 0 0  10 0 0
+0 0 0 0 0 0  -20 0 0  0 0 0  20 0 0
+0 0 0 0 0 0  -10 0 0  0 0 0  10 0 0
+0 0 0 0 0 0  0 0 0  0 0 0  0 0 0
+0 0 0 0 0 0  10 0 0  0 0 0  -10 0 0
+0 0 0 0 0 0  20 0 0  0 0 0  -20 0 0
+0 0 0 0 0 0  10 0 0  0 0 0  -10 0 0
